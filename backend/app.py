@@ -40,10 +40,7 @@ def symptoms():
             "error": "Please enter a valid age"
         }), 400
 
-    # if not isinstance(symptom, str) or not symptom.strip():
-    #     return jsonify({
-    #         "error": "Please enter valid symptoms"
-    #     }), 400
+   
 
     result = analyze_symptoms(age, symptom)
 
