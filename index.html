@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HealthGuard AI</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>HealthGuard AI</h1>
+        <span>Smart Healthcare Assistant</span>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <h2>Your Health, Our Priority</h2>
+            <p>Enter your symptoms to receive basic health guidance.</p>
+        </section>
+
+        <section class="card">
+
+            <label for="age">Patient Age</label>
+            <input
+                type="number"
+                id="age"
+                placeholder="Enter your age"
+                min="1"
+                max="120"
+            >
+
+            <label for="symptoms">Describe Your Symptoms</label>
+            <textarea
+                id="symptoms"
+                placeholder="Example: Fever, headache, cough..."
+            ></textarea>
+
+            <button id="analyzeBtn" onclick="analyzeSymptoms()">
+                Analyse Symptoms
+            </button>
+
+            <div id="result" aria-live="polite"></div>
+
+            <button id="saveBtn" onclick="savePatient()">
+                Save Patient Details
+            </button>
+
+            <p class="warning">
+                ⚠️ This is a prototype, not a medical diagnosis.
+                Consult a healthcare professional for medical advice.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 HealthGuard AI | Hackathon Project
+    </footer>
+
+</body>
+</html>
